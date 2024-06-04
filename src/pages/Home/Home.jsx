@@ -7,7 +7,7 @@ import HeroContainer from './Hero/HeroContainer';
 import Gallary from './Gallary/Gallary';
 
 const Home = () => {
-    useTitle('Home | Yoga Master - Unleashed Your Inner Self');
+    useTitle('Home | TrimTrack - Unleashed Your Inner beauty');
     return (
         <section>
             <HeroContainer />
