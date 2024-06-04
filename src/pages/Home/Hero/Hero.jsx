@@ -7,7 +7,7 @@ const Hero = () => {
                 <div className="">
                     <div className="space-y-4">
                         <h3 className='md:text-4xl text-2xl'>WE PROVIDES</h3>
-                        <h1 className='md:text-7xl text-4xl font-bold '>Best Yoga Online</h1>
+                        <h1 className='md:text-7xl text-4xl font-bold '>Best Haircuts</h1>
                         <div className="md:w-1/2">
                             <p className=''>Offered chiefly farther of my no colonel shyness. Such on help ye some door if in. Laughter proposal laughing any son law consider.</p>
                         </div>
