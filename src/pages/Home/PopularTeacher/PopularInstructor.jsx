@@ -22,12 +22,12 @@ const PopularInstructor = () => {
       <div className="mb-20">
         <h1 className="text-5xl font-bold text-center text-secondary">
           Our <span className="text-black dark:text-white">Amazing</span>{" "}
-          Teachers
+          Barbers
         </h1>
         <div className="w-[40%] text-center mx-auto my-4">
           <p className="text-gray-500">
-            Explore our Popular Classes . Here is some popular classes based on
-            How many student enrolled
+            Explore our Popular services . Here is some popular services  based on
+            ratings 
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@ const PopularInstructor = () => {
                   Instructor
                 </div>
                 <div className="text-gray-500 mb-4 whitespace-nowrap">
-                  Total Students : {instructor?.totalEnrolled}
+                  Total review : {instructor?.totalEnrolled}
                 </div>
                 <div className="flex flex-row items-center justify-center gap-4 text-gray-800 my-auto text-2xl mx-auto md:mx-0">
                   <a className="hover:cursor-pointer text-secondary duration-300">
@@ -70,7 +70,7 @@ const PopularInstructor = () => {
             </div>
           </div>
         ))} 
-      </div></> : <p>No Instructor Available</p>
+      </div></> : <p>No barber Available</p>
       }
     </div>
   );

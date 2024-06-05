@@ -75,7 +75,7 @@ const SingleClass = () => {
         {/* breadcrumb or header */}
         <div className="breadcrumbs bg-primary py-20 mt-20 section-padding bg-cover bg-center bg-no-repeat">
           <div className="container text-center">
-            <h2>Course Details</h2>
+            <h2>Service Details</h2>
           </div>
         </div>
         

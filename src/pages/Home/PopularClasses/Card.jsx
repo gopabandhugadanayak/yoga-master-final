@@ -24,6 +24,7 @@ const Card = ({ name, image, availableSeats, price, totalEnrolled, id: itmId }) 
           userMail: currentUser.email,
           date: new Date(),
         };
+        ///class/665e043a0e012a5a090c24fa
 
         toast.promise(
           axiosSecure.post('/add-to-cart', data),
@@ -92,7 +93,7 @@ const Card = ({ name, image, availableSeats, price, totalEnrolled, id: itmId }) 
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          Total Students: {totalEnrolled}
+          Total Services: {totalEnrolled}
         </motion.p>
         <div className="text-center mt-2">
           <motion.button

@@ -15,7 +15,7 @@ const ShowInstructors = () => {
                     instructors.map(instructor =><div key={instructor._id} className="max-w-xs">
                             <div className="bg-white dark:bg-black dark:border-secondary dark:shadow-white border hover:-translate-y-1 hover:border-secondary cursor-pointer duration-200 rounded-lg py-3">
                                 <div className="photo-wrapper p-2">
-                                    <img className="w-32 h-32 rounded-full mx-auto" src={instructor.photoUrl} alt="John Doe" />
+                                    <img className="w-32 h-32 rounded-full mx-auto" src={instructor.photoUrl="assets/gallery/image1.jpg"} alt="John Doe" />
                                 </div>
                                 <div className="p-2">
                                     <h3 className="text-center dark:text-white text-xl text-gray-900 font-medium leading-8">{instructor.name}</h3>

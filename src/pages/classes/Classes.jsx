@@ -74,7 +74,7 @@ const Classes = () => {
         <div>
 
             <div className="mt-20 pt-3">
-                <h1 className="text-4xl font-bold text-center text-dark-primary">Classes</h1>
+                <h1 className="text-4xl font-bold text-center text-dark-primary">Services</h1>
             </div>
 
 
@@ -107,7 +107,7 @@ const Classes = () => {
                             >
                                 <div className="absolute inset-0 flex items-center justify-center">
 
-                                    <button onClick={() => handelSelect(cls._id)} title={role === 'admin' || role === 'instructor' ? 'Instructor/Admin Can not be able to select ' ? cls.availableSeats <1 : 'No seat avalible' : 'You can select this classes' } disabled={role === 'admin' || role === 'instructor' || cls.availableSeats < 1} className="px-4 py-2 text-white disabled:bg-red-300 bg-secondary duration-300 rounded hover:bg-red-700">
+                                    <button onClick={() => handelSelect(cls._id)} title={role === 'admin' || role === 'instructor' ? 'Instructor/Admin Can not be able to select ' ? cls.availableSeats <1 : 'No seat avalible' : 'You can select this service' } disabled={role === 'admin' || role === 'instructor' || cls.availableSeats < 1} className="px-4 py-2 text-white disabled:bg-red-300 bg-secondary duration-300 rounded hover:bg-red-700">
                                         Select
                                     </button>
 
@@ -116,7 +116,7 @@ const Classes = () => {
                         </div>
                         <div className="px-6 py-2">
                             <h3 className={`${cls.name.length > 25 ? 'text-[14px]' : 'text-[16px]'}  font-bold`}>{cls.name}</h3>
-                            <p className="text-gray-500 text-xs">Instructor : {cls.instructorName}</p>
+                            <p className="text-gray-500 text-xs">salon : {cls.instructorName}</p>
                             <div className="flex items-center justify-between mt-4">
                                 <span className="text-gray-600 text-xs">Available Seats: <span className='text-secondary'>{cls.availableSeats}</span> </span>
                                 <span className="text-green-500 font-semibold">${cls.price}</span>
