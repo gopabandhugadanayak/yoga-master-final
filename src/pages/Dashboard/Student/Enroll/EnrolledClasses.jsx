@@ -95,7 +95,7 @@ const EnrolledClasses = () => {
                                 <h1 title={item.classes.name} className="text-lg font-normal mb-0 text-gray-600 font-sans">
                                     {item.classes.name.length > 20 ? item.classes.name.slice(0, 20) + '...' : item.classes.name}
                                 </h1>
-                                <span className="text-xs text-indigo-300 mt-0">by <span className='text-black'>{item.classes.instructorName}</span></span>
+                                <span className="text-xs text-indigo-300 mt-0">by <span className='text-black'>{item.classes.salonName}</span></span>
                             </div>
                             <p className="text-xs text-gray-500 w-4/5">
                                 {item.classes.description?.length > 100 ? item.classes.description.slice(0, 100) + '...' : item.classes.description}

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTitle } from '../../hooks/useTitle';
-import ShowInstructors from './All/ShowInstructors';
+import Showsalons from './All/Showsalons';
 
-const Instructors = () => {
-    useTitle('Instructors | Yoga Master - Unleashed Your Inner Self');
+const salons = () => {
+    useTitle('Salons | TrimTrack - Unleashed Your Inner Self');
     return (
         <section>
-            <ShowInstructors />
+            <Showsalons />
         </section>
     );
 };
 
-export default Instructors;
+export default salons;

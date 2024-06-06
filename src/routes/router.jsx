@@ -3,29 +3,29 @@ import Home from "../pages/Home/Home";
 import MainLayout from "../layout/MainLayout";
 import Register from "../pages/user/Register";
 import Login from "../pages/user/Login";
-import Instructors from "../pages/Instructors/Instructors";
+import salons from "../pages/salons/salons";
 import DashboardLayout from "../layout/DashboardLayout";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import ManageUsers from "../pages/Dashboard/Admin/users/ManageUsers";
 import UpdateUser from "../pages/Dashboard/Admin/users/UpdateUser";
 import Classes from "../pages/classes/Classes";
 import ErrorPage from "../pages/error/ErrorPage";
-import AddClass from "../pages/Dashboard/Instructors/AddClass";
-import MyClasses from "../pages/Dashboard/Instructors/MyClasses";
-import InstructorCP from "../pages/Dashboard/Instructors/InstructorCP";
+import AddClass from "../pages/Dashboard/salons/AddClass";
+import MyClasses from "../pages/Dashboard/salons/MyClasses";
+import salonCP from "../pages/Dashboard/salons/salonCP";
 import AdminHome from "../pages/Dashboard/Admin/AdminHome";
 import ManageClasses from "../pages/Dashboard/Admin/ManageClasses";
 import StudentCP from "../pages/Dashboard/Student/StudentCP";
 import SelectedClass from "../pages/Dashboard/Student/SelectedClass";
 import Payment from "../pages/Dashboard/Student/Payment/Payment";
 import MyPaymentHistory from "../pages/Dashboard/Student/Payment/History/MyPaymentHistory";
-import AsInstructor from "../pages/Dashboard/Student/Apply/AsInstructor";
+import Assalon from "../pages/Dashboard/Student/Apply/Assalon";
 import AdminRoute from "./Privet/AdminRoute";
-import InstructorRoute from "./Privet/InstructorRoute";
+import salonRoute from "./Privet/salonRoute";
 import StudentRoute from "./Privet/StudentRoute";
 import PrivetRoute from "./Privet/PrivetRoute";
 import EnrolledClasses from "../pages/Dashboard/Student/Enroll/EnrolledClasses";
-import UpdateClass from "../pages/Dashboard/Instructors/UpdateClass";
+import UpdateClass from "../pages/Dashboard/salons/UpdateClass";
 import SingleClass from "../pages/classes/SingleClass";
 
 export const router = createBrowserRouter([
@@ -47,8 +47,8 @@ export const router = createBrowserRouter([
                 element: <Login />
             },
             {
-                path: "instructors",
-                element: <Instructors />
+                path: "salons",
+                element: <salons />
             },
             {
                 path: "classes",
@@ -88,22 +88,22 @@ export const router = createBrowserRouter([
                 path: 'manage-class',
                 element: <AdminRoute><ManageClasses /></AdminRoute>
             },
-            // * INSTRUCTOR ROUTES
+            // * salon ROUTES
             {
-                path: 'instructor-cp',
-                element: <InstructorRoute><InstructorCP /></InstructorRoute>
+                path: 'salon-cp',
+                element: <salonRoute><salonCP /></salonRoute>
             },
             {
                 path: 'add-class',
-                element: <InstructorRoute><AddClass /></InstructorRoute>
+                element: <salonRoute><AddClass /></salonRoute>
             },
             {
                 path: 'my-classes',
-                element: <InstructorRoute><MyClasses /></InstructorRoute>
+                element: <salonRoute><MyClasses /></salonRoute>
             },
             {
                 path: 'update/:id',
-                element: <InstructorRoute><UpdateClass /></InstructorRoute>,
+                element: <salonRoute><UpdateClass /></salonRoute>,
                 loader: ({ params }) => fetch(`https://yoga-master-server-3j7o.onrender.com/class/${params.id}`),
             },
             // * STUDENT ROUTES
@@ -124,8 +124,8 @@ export const router = createBrowserRouter([
                 element: <StudentRoute><MyPaymentHistory /></StudentRoute>
             },
             {
-                path: 'apply-instructor',
-                element: <StudentRoute><AsInstructor /></StudentRoute>
+                path: 'apply-salon',
+                element: <StudentRoute><Assalon /></StudentRoute>
             },
             {
                 path: 'enrolled-class',

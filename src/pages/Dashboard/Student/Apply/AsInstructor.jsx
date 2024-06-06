@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useUser } from '../../../../hooks/useUser';
 import useAxiosFetch from '../../../../hooks/useAxiosFetch';
 import { ScaleLoader } from 'react-spinners';
-const AsInstructor = () => {
+const Assalon = () => {
     const { currentUser } = useUser();
     const [submittedData, setSubmittedData] = useState({});
     const [loading, setLoading] = useState(true); // [1
@@ -21,13 +21,13 @@ const AsInstructor = () => {
             email,
             experience,
         };
-        axiosFetch.post('/as-instructor', data).then((res) => {
+        axiosFetch.post('/as-salon', data).then((res) => {
             console.log(res.data);
         });
     };
 
     useEffect(() => {
-        axiosFetch.get(`/applied-instructors/${currentUser?.email}`).then((res) => {
+        axiosFetch.get(`/applied-salons/${currentUser?.email}`).then((res) => {
             console.log(res.data);
             setSubmittedData(res.data);
             setLoading(false);
@@ -165,7 +165,7 @@ const AsInstructor = () => {
             </div>
             {
                 submittedData?.reject && <div className="">
-                    <p>You are not able to join with Instructor</p>
+                    <p>You are not able to join with salon</p>
                     <p className='font-bold'>Reason :</p>
                     <div className="w-1/2">
                         {submittedData?.reject}
@@ -177,4 +177,4 @@ const AsInstructor = () => {
     );
 };
 
-export default AsInstructor;
+export default Assalon;

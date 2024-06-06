@@ -25,7 +25,7 @@ const StudentCP = () => {
                             <Link  to='/dashboard/my-payments'>Payment History</Link>
                         </div>
                         <div className="border border-secondary rounded-lg hover:bg-secondary hover:text-white duration-200 px-2 py-1">
-                            <Link  to='/dashboard/apply-instructor'>Join as a Instructor</Link>
+                            <Link  to='/dashboard/apply-salon'>Join as a salon</Link>
                         </div>
                     </div>
                 </div>

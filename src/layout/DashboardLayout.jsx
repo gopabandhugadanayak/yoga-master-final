@@ -22,8 +22,8 @@ const adminNavItems = [
     { to: "/dashboard/manage-class", icon: <BsFillPostcardFill className="text-2xl" />, label: "Manage Class" },
     { to: "/dashboard/manage-applications", icon: <TbBrandAppleArcade className="text-2xl" />, label: "Applications" },
 ];
-const instructorNavItem = [
-    { to: "/dashboard/instructor-cp", icon: <FaHome className="text-2xl" />, label: "Home" },
+const salonNavItem = [
+    { to: "/dashboard/salon-cp", icon: <FaHome className="text-2xl" />, label: "Home" },
     { to: "/dashboard/add-class", icon: <MdExplore className="text-2xl" />, label: "Add A class" },
     { to: "/dashboard/my-classes", icon: <IoSchoolSharp className="text-2xl" />, label: "My Classes" },
     { to: "/dashboard/my-pending", icon: <MdPendingActions className="text-2xl" />, label: "Pending Classes" },
@@ -34,7 +34,7 @@ const student = [
     { to: "/dashboard/enrolled-class", icon: <SiGoogleclassroom className="text-2xl" />, label: "My Enroll" },
     { to: "/dashboard/my-selected", icon: <BiSelectMultiple className="text-2xl" />, label: "My Selected" },
     { to: "/dashboard/my-payments", icon: <MdPayments className="text-2xl" />, label: "Payment History" },
-    { to: "/dashboard/apply-instructor", icon: <SiInstructure className="text-2xl" />, label: "Apply for Instructor" },
+    { to: "/dashboard/apply-salon", icon: <SiInstructure className="text-2xl" />, label: "Apply for salon" },
 ];
 const lastMenuItems = [
     { to: "/", icon: <BiHomeAlt className="text-2xl" />, label: "Main Home" },
@@ -136,9 +136,9 @@ const DashboardLayout = () => {
                     </ul>
                 }
                 {
-                    role === 'instructor' && <ul className="pt-6">
+                    role === 'salon' && <ul className="pt-6">
                         <p className={`ml-3 text-light-gray-4 ${!open && "hidden"}`}><small>MENU</small></p>
-                        {instructorNavItem.map((menuItem, index) => (
+                        {salonNavItem.map((menuItem, index) => (
                             <li key={index} className="mb-2">
                                 <NavLink
                                     to={menuItem.to}

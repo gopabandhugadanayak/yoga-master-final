@@ -44,8 +44,8 @@ const AdminStats = ({ users }) => {
             </svg>
           </div>
           <div className="px-4 text-gray-700">
-            <h3 className="text-sm tracking-wider">Instructors</h3>
-            <p className="text-3xl">{data.instructors}</p>
+            <h3 className="text-sm tracking-wider">salons</h3>
+            <p className="text-3xl">{data.salons}</p>
           </div>
         </div>
         <div className="flex items-center bg-white border rounded-sm overflow-hidden shadow">

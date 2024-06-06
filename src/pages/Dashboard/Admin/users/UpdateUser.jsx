@@ -86,7 +86,7 @@ const UpdateUser = () => {
                                 </div>
                                 <div>
                                     <label className="ml-2" htmlFor="phone">Skills</label>
-                                    <p className='text-[12px] ml-2 text-red-400'>If the user is an instructor, then set skills; otherwise, leave it empty</p>
+                                    <p className='text-[12px] ml-2 text-red-400'>If the user is an salon, then set skills; otherwise, leave it empty</p>
                                     <input
                                         className="w-full mt-2 rounded-lg border outline-none border-secondary p-3 text-sm"
                                         placeholder="Skills"
@@ -162,9 +162,9 @@ const UpdateUser = () => {
                                     <input
                                         className="peer sr-only"
                                         id="option3"
-                                        value='instructor'
+                                        value='salon'
                                         type="radio"
-                                        defaultChecked={userCredentials?.role === 'instructor' ? true : false}
+                                        defaultChecked={userCredentials?.role === 'salon' ? true : false}
                                         tabIndex="-1"
                                         name="option"
                                     />
@@ -173,7 +173,7 @@ const UpdateUser = () => {
                                         className="block w-full rounded-lg border border-secondary p-3  peer-checked:bg-secondary peer-checked:text-white"
                                         tabIndex="0"
                                     >
-                                        <span className="text-sm font-medium">Instructor</span>
+                                        <span className="text-sm font-medium">salon</span>
                                     </label>
                                 </div>
                             </div>

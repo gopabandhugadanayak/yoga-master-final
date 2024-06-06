@@ -107,7 +107,7 @@ const ManageClasses = () => {
                                         <tr>
                                             <th scope="col" className="px-6 py-4">PHOTO</th>
                                             <th scope="col" className="px-6 py-4">COURSE NAME</th>
-                                            <th scope="col" className="px-6 py-4">INSTRUCTOR NAME</th>
+                                            <th scope="col" className="px-6 py-4">salon NAME</th>
                                             <th scope="col" className="px-6 py-4">STATUS</th>
                                             <th scope="col" className="px-6 py-4">DETAILS</th>
                                         </tr>
@@ -122,7 +122,7 @@ const ManageClasses = () => {
                                                         <img src={cls.image} className='h-[35px] w-[35px]' alt="" />
                                                     </td>
                                                     <td className="whitespace-pre-wrap px-6 py-4">{cls.name}</td>
-                                                    <td className="whitespace-nowrap px-6 py-4">{cls.instructorName}</td>
+                                                    <td className="whitespace-nowrap px-6 py-4">{cls.salonName}</td>
                                                     <td className="whitespace-nowrap px-6 py-4">
                                                         <span className={`font-bold ${cls.status === 'pending' ? 'bg-orange-400' : cls.status === 'checking' ? 'bg-yellow-500' : cls.status === 'approved' ? 'bg-green-600' : 'bg-red-600'} px-2 py-1 uppercase text-white rounded-xl`}>{cls.status}</span>
                                                     </td>

@@ -1,6 +1,6 @@
 import React from 'react';
 import bgimg from '../../../assets/dashboard/jaconda-14.png'
-const InstructorCP = () => {
+const salonCP = () => {
     return (
         <div>
             <div className='h-screen'>
@@ -10,4 +10,4 @@ const InstructorCP = () => {
     );
 };
 
-export default InstructorCP;
+export default salonCP;

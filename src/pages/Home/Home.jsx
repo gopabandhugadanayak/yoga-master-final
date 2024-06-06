@@ -2,7 +2,7 @@ import React from 'react';
 import { useTitle } from '../../hooks/useTitle';
 import Map from './Map/Map';
 import PopularClasses from './PopularClasses/PopularClasses';
-import PopularInstructor from './PopularTeacher/PopularInstructor';
+import Popularsalon from './PopularTeacher/Popularsalon';
 import HeroContainer from './Hero/HeroContainer';
 import Gallary from './Gallary/Gallary';
 
@@ -15,7 +15,7 @@ const Home = () => {
             <Gallary/>
                 <PopularClasses />
                 
-                <PopularInstructor />
+                <Popularsalon />
             </div>
             <Map />
         </section>

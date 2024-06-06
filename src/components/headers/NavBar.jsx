@@ -14,7 +14,7 @@ const navLinks = [
     },
     {
         name: 'Salons',
-        route: '/instructors'
+        route: '/salons'
     },
     {
         name: 'Services',

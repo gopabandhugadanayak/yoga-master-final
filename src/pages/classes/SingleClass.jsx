@@ -108,7 +108,7 @@ const SingleClass = () => {
                         <p className=" text-secondary  ">
                           Trainer
                           <a href="#" className=" text-black">
-                            : {course.instructorName}
+                            : {course.salonName}
                           </a>
                         </p>
                       </div>
@@ -132,7 +132,7 @@ const SingleClass = () => {
                         <a href="#tab2">Carriculum</a>
                       </li>
                       <li>
-                        <a href="#tab3">Instructor</a>
+                        <a href="#tab3">salon</a>
                       </li>
                       <li>
                         <a href="#tab4">Reviews</a>
@@ -282,7 +282,7 @@ const SingleClass = () => {
                       </div>
                     </a>
                     <h3>${course.price}</h3>
-                    <button onClick={() => handelSelect(course._id)} title={role === 'admin' || role === 'instructor' ? 'Instructor/Admin Can not be able to select ' ? course.availableSeats <1 : 'No seat avalible' : 'You can select this classes' } disabled={role === 'admin' || role === 'instructor' || course.availableSeats < 1}  className="btn btn-primary w-full text-center bg-secondary py-2 px-6 text-white ">
+                    <button onClick={() => handelSelect(course._id)} title={role === 'admin' || role === 'salon' ? 'salon/Admin Can not be able to select ' ? course.availableSeats <1 : 'No seat avalible' : 'You can select this classes' } disabled={role === 'admin' || role === 'salon' || course.availableSeats < 1}  className="btn btn-primary w-full text-center bg-secondary py-2 px-6 text-white ">
                       Enroll Now
                     </button>
                     <ul className="list  ">
@@ -290,10 +290,10 @@ const SingleClass = () => {
                         <div className="flex-1 space-x-3 flex items-center">
                           <FaUser className="inline-flex"/>
                           <div className=" text-black font-semibold">
-                            Instructor
+                            salon
                           </div>
                         </div>
-                        <div className="flex-none">{course.instructorName}</div>
+                        <div className="flex-none">{course.salonName}</div>
                       </li>
 
                       <li className=" flex space-x-3 border-b border-[#ECECEC] mb-4 pb-4 last:pb-0 past:mb-0 last:border-0">

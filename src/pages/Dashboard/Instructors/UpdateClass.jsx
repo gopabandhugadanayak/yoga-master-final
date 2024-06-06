@@ -17,8 +17,8 @@ const UpdateClass = () => {
         const newData = Object.fromEntries(formData);
         formData.append('file', image);
 
-        newData.instructorName = currentUser.name;
-        newData.instructorEmail = currentUser.email;
+        newData.salonName = currentUser.name;
+        newData.salonEmail = currentUser.email;
         newData.status = 'pending';
         newData.submitted = new Date();
         newData.totalEnrolled = 0;
@@ -81,8 +81,8 @@ const UpdateClass = () => {
                     <h1 className='text-[12px] my-2 ml-2 text-secondary'>You can not change your name or email</h1>
                     <div className="grid gap-3 grid-cols-2">
                         <div className="mb-6">
-                            <label className="block text-gray-700 font-bold mb-2" htmlFor="instructorName">
-                                Instructor name
+                            <label className="block text-gray-700 font-bold mb-2" htmlFor="salonName">
+                                salon name
                             </label>
                             <input
                                 className="w-full px-4 py-2 border border-secondary rounded-md focus:outline-none focus:ring-blue-500"
@@ -90,13 +90,13 @@ const UpdateClass = () => {
                                 value={currentUser?.name}
                                 readOnly
                                 disabled
-                                placeholder='Instructor Name'
-                                name='instructorName'
+                                placeholder='salon Name'
+                                name='salonName'
                             />
                         </div>
                         <div className="mb-6">
-                            <label className="block text-gray-700 font-bold mb-2" htmlFor="instructorEmail">
-                                Instructor email
+                            <label className="block text-gray-700 font-bold mb-2" htmlFor="salonEmail">
+                                salon email
                             </label>
                             <input
                                 title='You can not update your email'
@@ -105,7 +105,7 @@ const UpdateClass = () => {
                                 value={currentUser?.email}
                                 disabled
                                 readOnly
-                                name='instructorEmail'
+                                name='salonEmail'
                             />
                         </div>
                     </div>
